@@ -28,41 +28,41 @@
     <!-- Catch Me If You Can -->
 
     <!-- <button id="btn-game" onclick="clickHere()">Im here</button> -->
-    <img src="demo.png" width="100" style="left: 100px;" alt="" id="btn-game" onclick="clickHere()">
+    <img src="demo.png" width="50" style="left: 50px;" alt="" id="btn-game" onclick="clickHere()">
 
     <input onchange="checkInput()" type="text" placeholder="Nhập gì cũng được" id="anyInput">
     <button id="btn-check">Send</button>
     <script>
-        // setInterval(changePos, 2000)
-        // // setTimeout(changePos,5000)
+       setInterval(changePos, 500)
+       setTimeout(changePos,500)
 
-        // function changePos() {
-        //     // Math.random() //0 -> 0.99999
-        //     // Math.floor => 4.9 => 4
-        //     // Math.round => 4.4 -> 4, 4.9 -> 5
-        //     // Math.ceil => 4.1 -> 5
-        //     // window.innerWidth <=> window.width
-        //     console.log(window.innerWidth);
-        //     // console.log(window.width);
-        //     let left = Math.floor(Math.random() * (window.innerWidth-100));
-        //     let top = Math.floor(Math.random() * window.innerHeight);
+       function changePos() {
+            // Math.random() //0 -> 0.99999
+            // Math.floor => 4.9 => 4
+            // Math.round => 4.4 -> 4, 4.9 -> 5
+            // Math.ceil => 4.1 -> 5
+            // window.innerWidth <=> window.width
+            console.log(window.innerWidth);
+            // console.log(window.width);
+            let left = Math.floor(Math.random() * (window.innerWidth-100));
+            let top = Math.floor(Math.random() * window.innerHeight);
 
-        //     document.getElementById("btn-game").style.left = left + "px";
-        //     document.getElementById("btn-game").style.top = top + "px";
-        // }
+            document.getElementById("btn-game").style.left = left + "px";
+            document.getElementById("btn-game").style.top = top + "px";
+        }
 
-        // function check(){
-        //     document.getElementById("demo").style.color = "red";
-        //     document.getElementById("demo").style.cursor = "pointer";
-        // }
+        function check(){
+            document.getElementById("demo").style.color = "red";
+            document.getElementById("demo").style.cursor = "pointer";
+        }
 
-        // function checkOut(){
-        //     document.getElementById("demo").style.color = "blue";
-        // }
+        function checkOut(){
+            document.getElementById("demo").style.color = "blue";
+        }
 
-        // function clickHere() {
-        //     alert("Đập trúng rồi")
-        // }
+        function clickHere() {
+            alert("Đập trúng rồi")
+        }
 
         function moveRight() {
             
